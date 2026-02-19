@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <style>
+            .city{
+                font: "times new roman";
+                background-color: rgb(234, 191, 38);
+                border: 10px solid black;
+                padding: 10px;
+                margin: 20px;
+                font-size: larger;
+            }
+            .coding{
+                font: "sans-serif";
+                background-color: lightgreen;
+                border: 2px solid black;
+                padding: 10px;
+                margin: 20px;
+            }
+            #techno{
+                background-color: rgb(230, 173, 173);
+                border: 9px solid black;
+                padding: 10px;
+                margin: 20px;
+            }
+
+            .button{
+                background-color: blue;
+                
+            }
+        </style>
+        <script>
+            function myFunction(){
+                var x=document.getElementsByClassName("city");
+                for(var i=0;i<x.length;i++){
+                    x[i].style.display="none";
+                    
+                }
+                
+            }
+        </script>
+        
+    </head>
+    
+        <div class="city">
+            <h2>Paris</h2>
+            <p>Paris is a Beautiful city</p>
+        </div>
+
+        <div class="city">
+            <h2>India</h2>
+            <p>India is our Beloved country</p>
+        </div>
+
+        
+        <div class="city">
+            <h2>New York</h2>
+            <p>New York is a great city</p>
+        </div>
+
+        
+        <div class="coding">
+            <h2>Python</h2>
+            <p>Python is a popular programming language.</p>
+        </div>
+
+        <div id="techno"><h1>TECH RELATED</h1> 
+
+        <div class="coding">
+            <h2>JavaScript</h2>
+            <p>JavaScript is a versatile language used for web development.</p>
+        </div>
+
+        <div class="city">
+        <ol>
+        <li>Milk</li>
+        <li>Tea</li>
+        <li>Badam</li>
+        </ol>
+        </div>
+
+        <button onclick="myFunction()">Click me to hide cities</button>
+
+    
+</html>
