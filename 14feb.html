@@ -1,0 +1,115 @@
+<html><head>
+        <title>Demo Code 14th FORMMM</title>
+        <style>
+          .myform{
+            background-color: bisque;
+            /*color: rgb(118, 5, 82);*/
+            border:1px solid rgb(5, 182, 70);
+            margin: 30px;
+            padding-left: 350px;
+            padding-right: 350px;
+            
+          }  
+          label{
+            color:rgb(227, 17, 185);
+          }
+          #coresubject{
+            color:blue;
+            font-size: 20px;
+          
+          }
+          #address{
+            background-color: rgb(198, 255, 196);
+            font-size: 15px;
+            color:brown;
+            border: 1px solid red;
+          }
+          #piinfo{
+            background-color: rgb(221, 233, 84);
+            color:brown;
+            border:5px solid rgb(232, 169, 169);
+            border-radius: 20px;
+          }
+          #adet{
+            background-color: rgb(235, 168, 222);
+            color:rgb(5, 98, 126);
+            border:5px solid rgb(180, 229, 17);
+            border-radius: 20px;
+            width:450px;
+          }
+        </style>
+    </head>
+    <body>
+        <div class="myform">
+        <form method="get" autocomplete="on" formenctype="multipart/form-data">
+            <h1 style="text-align: center;">Students Information</h1>
+            <fieldset id="piinfo">
+            <legend style="color:rgb(4, 139, 142)">Personal Information</legend>
+            <input type="hidden" name="usn">
+            <label style="color:red;">Full name:</label><input type="text" name="fullname" maxlength="5" id="fullname" autofocus=""><br><br>
+            <label style="color:blueviolet">First Name:</label><input type="text" name="fname" placeholder="Enter your first name"><br><br>
+            <label>Last Name:</label><input type="text" name="lname" size="30" placeholder="Enter your last name"><br><br>
+           <label for="mobileno">Mobile No.:</label> <input type="tel" name="mobileno" placeholder="EX:91-1234567890" pattern="[0-9]{2}-[0-9]{10}"><br><br>
+            Email Id:&nbsp;&nbsp;&nbsp;<input type="email" name="email"><br><br>
+            Password:&nbsp;&nbsp;<input type="password" name="pass" maxlength="5"><br><br>
+            Select Gender: Male- <input type="radio" name="gender" value="Male" checked=""> Female-<input type="radio" name="gender" value="Female"><br><br>
+            Age Calculation:<input type="text" value="25" name="age" readonly=""><input type="button" value="Click Me"><br><br>
+            D.O.B:<input type="date" name="dob"><br><br>
+             Adhar No.:<input type="search"> Voting No.:<input type="text" name="Votingno" value="PN3456" disabled=""><br><br>
+            Landline Number:<input type="tel" name="Landlineno" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+            <label>Address:</label><textarea name="address" id="address" row="20" cols="50"></textarea><br><br>
+            </fieldset>
+
+            <fieldset id="adet">
+                <legend style="color:rgb(4, 139, 142)">Academic Details</legend>
+            Programming Skill:Java:<input type="checkbox" name="skill1" value="Java" checked=""> Python:<input type="checkbox" value="Python" name="skill2"><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PHP:<input type="checkbox" value="PHP" name="skill3"> WT:<input type="checkbox" value="WT" name="skill4"><br><br>
+            Choose Your ID Card Tag color:<input type="color" name="color"><br><br>
+            College Joined Date and Time:<input type="datetime-local" name="joiningtime"><br><br>
+            Upload your Photo:<input type="file" name="photo"><input type="button" value="upload photo"><br><br>
+            Your Uploaded Photo:<input type="image" src="../Class Notes/image1.png" width="50" height="50"><br><br>
+            Select Month You taking for leave:<input type="month" name="month"><br><br>
+            Height:<input type="number" name="height" min="4" max="7"><br><br>
+            PU %ge:<input type="range" name="puscrore" min="0" max="100"><br><br>
+            <label for="datemax">Enter a date before 1980-01-01:</label>
+            <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+            <label for="datemin">Enter a date after 2000-01-01:</label>
+            <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+
+           Select Exam Time:<input type="time" name="examtime"><br><br>
+            Paste here URL of your Profile:<input type="url" name="profileurl"><br><br>
+            Select Your Exam week:<input type="week" name="examweek"><br><br>
+            Upload SSLC,PU Marks cards:<input type="file" name="markscard" multiple=""><br><br>
+            weight:<input type="number" name="weight" step="5"><br><br>
+            Choose subject:<input list="subjects">
+                        <datalist id="subjects">
+                            <option value="Java">
+                            </option><option value="Python">
+                            </option><option value="C">
+                            </option><option value="Kotlin">
+                            </option><option value="Flutter">
+                        </option></datalist><br><br>
+            <label>Choose Core Subject:</label><select name="coresubject" id="coresubject" size="2" multiple="">
+                 <option>Select Subject</option>
+                  <option>Java</option>
+                  <option selected="">Python</option>
+                  <option>C</option>
+                  <option>Kotlin</option>
+            </select><br><br>
+            
+            </fieldset>
+            <input type="submit" value="Signup">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="reset"><br><br>
+        </form>
+        <form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            0
+            <input type="range" id="a" name="a" value="50">
+            100 +
+            <input type="number" id="b" name="b" value="50">
+            =
+            <output name="x" for="a b"></output>
+            <br><br>
+         
+        </form>
+
+        </div>
+    
+</body></html>
