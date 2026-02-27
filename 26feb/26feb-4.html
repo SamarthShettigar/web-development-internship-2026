@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Position Property Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            height: 2000px; /* Added for scroll to see fixed & sticky */
+        }
+
+        .container {
+            border: 2px solid black;
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+
+        .box {
+            width: 150px;
+            height: 80px;
+            color: white;
+            text-align: center;
+            line-height: 80px;
+            font-weight: bold;
+        }
+
+        /* 1. Static (Default) */
+        .static {
+            position:static;
+            background-color: gray;
+        }
+
+        /* 2. Relative */
+        .relative {
+            position: relative;
+            left: 400px;
+            top: 20px;
+            background-color: blue;
+        }
+
+        /* 3. Absolute */
+        .absolute-container {
+            position: relative;
+            height: 200px;
+            background-color: #f2f2f2;
+        }
+
+        .absolute {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            background-color: red;
+        }
+
+        /* 4. Fixed */
+        .fixed {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            background-color: green;
+        }
+
+        /* 5. Sticky */
+        .sticky {
+            position: sticky;
+            top: 0;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>CSS Position Property Demonstration</h2>
+
+    <!-- Static -->
+    <div class="container">
+        <h3>1. Static (Default)</h3>
+        <div class="box static">Static</div>
+    </div>
+
+    <!-- Relative -->
+    <div class="container">
+        <h3>2. Relative</h3>
+        <div class="box relative">Relative</div>
+    </div>
+
+    <!-- Absolute -->
+    <div class="container absolute-container">
+        <h3>3. Absolute (inside Relative Parent)</h3>
+        <div class="box absolute">Absolute</div>
+    </div>
+
+    <!-- Fixed -->
+    <div class="box fixed">Fixed</div>
+
+    <!-- Sticky -->
+    <div class="container">
+        <h3>4. Sticky (Scroll Down)</h3>
+        <div class="box sticky">Sticky</div>
+        <p>Scroll down to see sticky effect...</p>
+    </div>
+
+</body>
+</html>
