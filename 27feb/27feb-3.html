@@ -1,0 +1,50 @@
+
+<html>
+    <head>
+        <title>Demo code CSS overflow property</title>
+        <style>
+            .mydiv{
+                width:300px;
+                height: 100px;
+                background-color: bisque;
+                border:2px double rebeccapurple;
+                color:brown;
+                font-size: 20px;
+                font-family: 'Courier New', Courier, monospace;
+                overflow-y: scroll;
+                float:left;
+                opacity: 0.2;
+                
+
+            }
+            .mydiv:hover{
+                opacity: 1.0;
+            }
+            .childdiv{
+                background-color: brown;
+                width:50px;
+                height: 50px;
+                overflow: scroll;
+                color:aliceblue;
+                border:2px solid black;
+                float: inherit;
+            }
+            img{
+                opacity: 0.1;
+            }
+            img:hover{
+                opacity: 1.0;
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="mydiv">
+            You can use the overflow property when you want to have better control of the layout. 
+            <div class="childdiv">The overflow property specifies what happens if content overflows an element's box.</div>
+        </div><br><br><br><br><br>
+
+        <img src="image1.png" width="100" height="100">
+    </body>
+</html>>
